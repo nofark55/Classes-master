@@ -33,6 +33,21 @@ public class RunMyZoo {
         flyinthesky(3);
         flyinthesky(3, 2);
 
+        int[] arr = { 1, 63, 24, 94, 123, 428, 821, 527, 12, 893 };
+        int i = 0;
+        while (i < arr.length) {
+            for (int j = 0; j < arr.length - 1; j++) {
+                System.out.println(arr[j]);
+                i++;
+
+                if ((j != 0) && ((arr[j] - arr[j - 1]) > 500)) {
+                    break;
+                }
+
+            }
+            
+        }
+
     }
         
 }
